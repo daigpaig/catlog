@@ -1,0 +1,25 @@
+# === Python ===
+*.pyc
+__pycache__/
+.env
+*.env
+*.sqlite3
+
+# === Node ===
+node_modules/
+dist/
+.next/
+.env.local
+
+# === OS/system ===
+.DS_Store
+*.log
+
+# === IDE ===
+.vscode/
+.idea/
+
+# === Build Artifacts ===
+build/
+.cache/
+*.lock

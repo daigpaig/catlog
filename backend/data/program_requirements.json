@@ -1,0 +1,1229 @@
+[
+    {
+        "program_id": 1,
+        "program_name": "Data Science",
+        "program_type": "major",
+        "note": "No more than 3 substitutions for STAT courses are permitted.",
+        "requirements": {
+          "type": "AND",
+          "value": [
+            {
+                "type": "AND",
+                "group_name": "Foundational Courses",
+                "value": [
+                    {
+                        "type": "OR",
+                        "value": [
+                          { "type": "COURSE", "value": "STAT 201-0" },
+                          { "type": "COURSE", "value": "COMP_SCI 110-0" }
+                        ]
+                      },
+                      {
+                        "type": "OR",
+                        "value": [
+                          { "type": "COURSE", "value": "STAT 202-0" },
+                          { "type": "COURSE", "value": "STAT 210-0" },
+                          { "type": "COURSE", "value": "STAT 232-0" }
+                        ]
+                      },
+                      {
+                        "type": "OR",
+                        "value": [
+                          { "type": "COURSE", "value": "STAT 320-1" },
+                          { "type": "COURSE", "value": "STAT 383-0" },
+                          { "type": "COURSE", "value": "MATH 310-1" },
+                          { "type": "COURSE", "value": "MATH 311-1" },
+                          { "type": "COURSE", "value": "MATH 314-0" },
+                          { "type": "COURSE", "value": "MATH 385-0" },
+                          { "type": "COURSE", "value": "ELEC_ENG 302-0" },
+                          { "type": "COURSE", "value": "IEMS 202-0" }
+                        ]
+                      },
+                      { "type": "COURSE", "value": "STAT 320-2" }
+                ]
+            },
+            {
+              "type": "OR",
+              "group_name": "Data Science Core Courses",
+              "value": [
+                {
+                  "type": "AND",
+                  "value": [
+                    { "type": "COURSE", "value": "STAT 301-1" },
+                    { "type": "COURSE", "value": "STAT 301-2" },
+                    { "type": "COURSE", "value": "STAT 301-3" }
+                  ]
+                },
+                {
+                  "type": "AND",
+                  "value": [
+                    { "type": "COURSE", "value": "STAT 303-1" },
+                    { "type": "COURSE", "value": "STAT 303-2" },
+                    { "type": "COURSE", "value": "STAT 303-3" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "OR",
+              "value": [
+                { "type": "COURSE", "value": "STAT 304-0" },
+                { "type": "COURSE", "value": "COMP_SCI 214-0" }
+              ]
+            },
+            {
+              "type": "OR",
+              "value": [
+                { "type": "COURSE", "value": "STAT 305-0" },
+                { "type": "COURSE", "value": "COMP_SCI 217-0" }
+              ]
+            },
+            { "type": "COURSE", "value": "STAT 362-0" },
+            { "type": "COURSE", "value": "STAT 390-0" },
+            {
+                "type": "AND",
+                "group_name": "Mathematics Requirement",
+                "note": "Take early",
+                "value": [
+                    {
+                        "type": "OR",
+                        "value": [
+                          {
+                            "type": "AND",
+                            "value": [
+                              {"type": "COURSE", "value": "MATH 220-1"},
+                              {"type": "COURSE", "value": "MATH 220-1"}
+                            ]
+                          },
+                          {
+                            "type": "AND",
+                            "value": [
+                              {"type": "COURSE", "value": "MATH 218-1"},
+                              {"type": "COURSE", "value": "MATH 218-2"},
+                              {"type": "COURSE", "value": "MATH 218-3"}
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "OR",
+                        "value": [
+                          { "type": "COURSE", "value": "MATH 230-1" },
+                          { "type": "COURSE", "value": "MATH 228-1" },
+                          { "type": "COURSE", "value": "MATH 281-1" },
+                          { "type": "COURSE", "value": "MATH 285-2" },
+                          { "type": "COURSE", "value": "MATH 290-2" },
+                          { "type": "COURSE", "value": "MATH 291-2" },
+                          { "type": "COURSE", "value": "ES_APPM 252-1" }
+                        ]
+                      },
+                      {
+                        "type": "OR",
+                        "value": [
+                          {
+                            "type": "AND",
+                            "value": [
+                              { "type": "COURSE", "value": "MATH 226-0" },
+                              { "type": "COURSE", "value": "MATH 230-2" }
+                            ]
+                          },
+                          { "type": "COURSE", "value": "STAT 228-0" },
+                          { "type": "COURSE", "value": "MATH 235-0" },
+                          {
+                            "type": "AND",
+                            "value": [
+                              { "type": "COURSE", "value": "MATH 226-0" },
+                              { "type": "COURSE", "value": "MATH 228-2" }
+                            ]
+                          },
+                          {
+                            "type": "AND",
+                            "value": [
+                              { "type": "COURSE", "value": "MATH 226-0" },
+                              { "type": "COURSE", "value": "MATH 281-2" }
+                            ]
+                          },
+                          {
+                            "type": "AND",
+                            "value": [
+                              { "type": "COURSE", "value": "MATH 226-0" },
+                              { "type": "COURSE", "value": "MATH 285-3" }
+                            ]
+                          },
+                          {
+                            "type": "AND",
+                            "value": [
+                              { "type": "COURSE", "value": "MATH 226-0" },
+                              { "type": "COURSE", "value": "MATH 290-3" }
+                            ]
+                          },
+                          {
+                            "type": "AND",
+                            "value": [
+                              { "type": "COURSE", "value": "MATH 226-0" },
+                              { "type": "COURSE", "value": "MATH 291-3" }
+                            ]
+                          },
+                          {
+                            "type": "AND",
+                            "value": [
+                              { "type": "COURSE", "value": "MATH 226-0" },
+                              { "type": "COURSE", "value": "ES_APPM 252-2" }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "OR",
+                        "value": [
+                          { "type": "COURSE", "value": "MATH 240-0" },
+                          { "type": "COURSE", "value": "MATH 281-3" },
+                          { "type": "COURSE", "value": "MATH 285-1" },
+                          { "type": "COURSE", "value": "MATH 290-1" },
+                          { "type": "COURSE", "value": "MATH 291-1" },
+                          { "type": "COURSE", "value": "GEN_ENG 205-1" },
+                          { "type": "COURSE", "value": "GEN_ENG 206-1" }
+                        ]
+                      }
+                ]
+            },        
+            {
+              "type": "ANY2OF",
+              "group_name": "Technical and domain science electives",
+              "value": [
+                [
+                  { "type": "COURSE", "value": "ANTHRO 322-0" },
+                  { "type": "COURSE", "value": "ANTHRO 324-0" },
+                  { "type": "COURSE", "value": "ANTHRO 362-0" },
+                  { "type": "COURSE", "value": "ANTHRO 389-0" },
+                  { "type": "COURSE", "value": "BIOL_SCI 323-0" },
+                  { "type": "COURSE", "value": "BIOL_SCI 338-0" },
+                  { "type": "COURSE", "value": "BIOL_SCI 341-0" },
+                  { "type": "COURSE", "value": "BIOL_SCI 378-0" },
+                  { "type": "COURSE", "value": "BMD_ENG 311-0" },
+                  { "type": "COURSE", "value": "BMD_ENG 312-0" },
+                  { "type": "COURSE", "value": "CHEM_ENG 379-0" },
+                  { "type": "COURSE", "value": "CHEM_ENG 367-0" },
+                  { "type": "COURSE", "value": "COG_SCI 345-0" },
+                  { "type": "COURSE", "value": "COMM_ST 352-0" },
+                  { "type": "COURSE", "value": "COMM_ST 355-0" },
+                  { "type": "COURSE", "value": "COMM_ST 358-0" },
+                  { "type": "COURSE", "value": "COMM_ST 371-0" },
+                  { "type": "COURSE", "value": "COMP_ENG 329-0" },
+                  { "type": "COURSE", "value": "COMP_ENG 358-0" },
+                  { "type": "COURSE", "value": "COMP_ENG 365-0" },
+                  { "type": "COURSE", "value": "COMP_ENG 368-0" },
+                  { "type": "COURSE", "value": "COMP_SCI 325-0" },
+                  { "type": "COURSE", "value": "COMP_SCI 331-0" },
+                  { "type": "COURSE", "value": "COMP_SCI 333-0" },
+                  { "type": "COURSE", "value": "COMP_SCI 336-0" },
+                  { "type": "COURSE", "value": "COMP_SCI 337-0" },
+                  { "type": "COURSE", "value": "COMP_SCI 339-0" },
+                  { "type": "COURSE", "value": "COMP_SCI 341-0" },
+                  { "type": "COURSE", "value": "COMP_SCI 348-0" },
+                  { "type": "COURSE", "value": "COMP_SCI 352-0" },
+                  { "type": "COURSE", "value": "EARTH 323-0" },
+                  { "type": "COURSE", "value": "EARTH 327-0" },
+                  { "type": "COURSE", "value": "EARTH 340-0" },
+                  { "type": "COURSE", "value": "EARTH 343-0" },
+                  { "type": "COURSE", "value": "EARTH 353-0" },
+                  { "type": "COURSE", "value": "EARTH 360-0" },
+                  { "type": "COURSE", "value": "EARTH 361-0" },
+                  { "type": "COURSE", "value": "ECON 307-0" },
+                  { "type": "COURSE", "value": "ECON 308-0" },
+                  { "type": "COURSE", "value": "ECON 316-0" },
+                  { "type": "COURSE", "value": "ECON 325-0" },
+                  { "type": "COURSE", "value": "ECON 326-0" },
+                  { "type": "COURSE", "value": "ECON 327-0" },
+                  { "type": "COURSE", "value": "ECON 336-0" },
+                  { "type": "COURSE", "value": "ECON 337-0" },
+                  { "type": "COURSE", "value": "ECON 339-0" },
+                  { "type": "COURSE", "value": "ECON 340-0" },
+                  { "type": "COURSE", "value": "ECON 341-0" },
+                  { "type": "COURSE", "value": "ECON 342-0" },
+                  { "type": "COURSE", "value": "ECON 349-0" },
+                  { "type": "COURSE", "value": "ECON 350-0" },
+                  { "type": "COURSE", "value": "ECON 351-0" },
+                  { "type": "COURSE", "value": "ECON 354-0" },
+                  { "type": "COURSE", "value": "ECON 355-0" },
+                  { "type": "COURSE", "value": "ECON 358-0" },
+                  { "type": "COURSE", "value": "ECON 359-0" },
+                  { "type": "COURSE", "value": "ECON 360-1" },
+                  { "type": "COURSE", "value": "ECON 360-2" },
+                  { "type": "COURSE", "value": "ECON 361-0" },
+                  { "type": "COURSE", "value": "ECON 362-0" },
+                  { "type": "COURSE", "value": "ECON 371-0" },
+                  { "type": "COURSE", "value": "ECON 372-0" },
+                  { "type": "COURSE", "value": "ECON 373-0" },
+                  { "type": "COURSE", "value": "ECON 381-1" },
+                  { "type": "COURSE", "value": "ECON 381-2" },
+                  { "type": "COURSE", "value": "ECON 383-0" },
+                  { "type": "COURSE", "value": "ELEC_ENG 328-0" },
+                  { "type": "COURSE", "value": "ELEC_ENG 331-0" },
+                  { "type": "COURSE", "value": "ELEC_ENG 332-0" },
+                  { "type": "COURSE", "value": "ELEC_ENG 335-0" },
+                  { "type": "COURSE", "value": "ELEC_ENG 373-0" },
+                  { "type": "COURSE", "value": "ELEC_ENG 375-0" },
+                  { "type": "COURSE", "value": "ES_APPM 346-0" },
+                  { "type": "COURSE", "value": "ES_APPM 370-1" },
+                  { "type": "COURSE", "value": "ES_APPM 375-1" },
+                  { "type": "COURSE", "value": "ES_APPM 375-2" },
+                  { "type": "COURSE", "value": "GBL_HLTH 303-0" },
+                  { "type": "COURSE", "value": "GBL_HLTH 320-0" },
+                  { "type": "COURSE", "value": "IEMS 308-0" },
+                  { "type": "COURSE", "value": "IEMS 313-0" },
+                  { "type": "COURSE", "value": "IEMS 315-0" },
+                  { "type": "COURSE", "value": "IEMS 317-0" },
+                  { "type": "COURSE", "value": "IEMS 340-0" },
+                  { "type": "COURSE", "value": "IEMS 341-0" },
+                  { "type": "COURSE", "value": "IEMS 351-0" },
+                  { "type": "COURSE", "value": "IMC 302-0" },
+                  { "type": "COURSE", "value": "IMC 307-0" },
+                  { "type": "COURSE", "value": "JOUR 377-0" },
+                  { "type": "COURSE", "value": "JOUR 342-2" },
+                  { "type": "COURSE", "value": "LING 334-0" },
+                  { "type": "COURSE", "value": "MATH 306-0" },
+                  { "type": "COURSE", "value": "MATH 308-0" },
+                  { "type": "COURSE", "value": "MATH 310-2" },
+                  { "type": "COURSE", "value": "MATH 310-3" },
+                  { "type": "COURSE", "value": "MATH 311-2" },
+                  { "type": "COURSE", "value": "MATH 311-3" },
+                  { "type": "COURSE", "value": "MATH 366-0" },
+                  { "type": "COURSE", "value": "MATH 368-0" },
+                  { "type": "COURSE", "value": "MATH 386-1" },
+                  { "type": "COURSE", "value": "MATH 386-2" },
+                  { "type": "COURSE", "value": "MUS_THRY 348-0" },
+                  { "type": "COURSE", "value": "POLL_SCI 310-0" },
+                  { "type": "COURSE", "value": "POLL_SCI 312-0" },
+                  { "type": "COURSE", "value": "PSYCH 345-0" },
+                  { "type": "COURSE", "value": "PSYCH 369-0" },
+                  { "type": "COURSE", "value": "PSYCH 380-0" },
+                  { "type": "COURSE", "value": "PSYCH 387-0" },
+                  { "type": "COURSE", "value": "SESP 272-0" },
+                  { "type": "COURSE", "value": "SOC_POL 330-0" },
+                  { "type": "COURSE", "value": "SOC_POL 331-0" },
+                  { "type": "COURSE", "value": "SOC_POL 339-0" },
+                  { "type": "COURSE", "value": "SOCIOL 303-0" },
+                  { "type": "COURSE", "value": "SOCIOL 329-0" },
+                  { "type": "COURSE", "value": "STAT 302-0" },
+                  { "type": "COURSE", "value": "STAT 320-3" },
+                  { "type": "COURSE", "value": "STAT 328-0" },
+                  { "type": "COURSE", "value": "STAT 344-0" },
+                  { "type": "COURSE", "value": "STAT 348-0" },
+                  { "type": "COURSE", "value": "STAT 350-0" },
+                  { "type": "COURSE", "value": "STAT 351-0" },
+                  { "type": "COURSE", "value": "STAT 352-0" },
+                  { "type": "COURSE", "value": "STAT 353-0" },
+                  { "type": "COURSE", "value": "STAT 354-0" },
+                  { "type": "COURSE", "value": "STAT 356-0" },
+                  { "type": "COURSE", "value": "STAT 357-0" },
+                  { "type": "COURSE", "value": "STAT 365-0" }
+                ]
+                
+              ]
+            },
+            {
+              "type": "OR",
+              "group_name": "Ethics elective",
+              "value": [
+                [
+                  {"type": "COURSE", "value": "BLK_ST 215-0"},
+                  {"type": "COURSE", "value": "BLK_ST 220-0"},
+                  {"type": "COURSE", "value": "ENTREP 360-0"},
+                  {"type": "COURSE", "value": "GBL_HLTH 302-0"},
+                  {"type": "COURSE", "value": "GBL_HLTH 324-0"},
+                  {"type": "COURSE", "value": "HUM 325-5"},
+                  {"type": "COURSE", "value": "IMC 310-0"},
+                  {"type": "COURSE", "value": "IMC 311-0"},
+                  {"type": "COURSE", "value": "JOUR 303-0"},
+                  {"type": "COURSE", "value": "JOUR 370-0"},
+                  {"type": "COURSE", "value": "LATINO 342-0"},
+                  {"type": "COURSE", "value": "LATINO 392-0"},
+                  {"type": "COURSE", "value": "PERF_ST 306-0"},
+                  {"type": "COURSE", "value": "PHIL 220-0"},
+                  {"type": "COURSE", "value": "COMP_LIT 207-0"},
+                  {"type": "COURSE", "value": "PHIL 221-0"},
+                  {"type": "COURSE", "value": "GNDR_ST 233-0"},
+                  {"type": "COURSE", "value": "PHIL 224-0"},
+                  {"type": "COURSE", "value": "PHIL 240-0"},
+                  {"type": "COURSE", "value": "PHIL 262-0"},
+                  {"type": "COURSE", "value": "PHIL 268-0"},
+                  {"type": "COURSE", "value": "PHIL 269-0"},
+                  {"type": "COURSE", "value": "PHIL 273-2"},
+                  {"type": "COURSE", "value": "PHIL 273-3"},
+                  {"type": "COURSE", "value": "PHIL 363-0"},
+                  {"type": "COURSE", "value": "PHIL 364-0"},
+                  {"type": "COURSE", "value": "POLL_SCI 302-0"},
+                  {"type": "COURSE", "value": "POLL_SCI 303-0"},
+                  {"type": "COURSE", "value": "POLL_SCI 304-0"},
+                  {"type": "COURSE", "value": "POLL_SCI 307-0"},
+                  {"type": "COURSE", "value": "POLL_SCI 309-0"},
+                  {"type": "COURSE", "value": "LEGAL_ST 309-0"},
+                  {"type": "COURSE", "value": "POLL_SCI 347-0"},
+                  {"type": "COURSE", "value": "POLL_SCI 382-0"},
+                  {"type": "COURSE", "value": "RELIGION 373-0"},
+                  {"type": "COURSE", "value": "SLAVIC 222-0"},
+                  {"type": "COURSE", "value": "LING 222-0"},
+                  {"type": "COURSE", "value": "SLAVIC 260-0"},
+                  {"type": "COURSE", "value": "SOCIOL 220-0"},
+                  {"type": "COURSE", "value": "HUM 220-0"},
+                  {"type": "COURSE", "value": "SOCIOL 321-0"}
+                ]
+                
+              ]
+            }
+          ]
+        }
+    },
+    {
+        "program_id": 2,
+        "program_name": "Economics",
+        "program_type": "major",
+        "requirements": {
+            "type": "AND",
+            "value": [
+                {
+                    "type": "AND",
+                    "group_name": "Introductory courses",
+                    "value": [
+                        { "type": "COURSE", "value": "ECON 201-0" },
+                        { "type": "COURSE", "value": "ECON 202-0" },
+                        { "type": "COURSE", "value": "ECON 281-0" }
+                    ]
+                },
+                {
+                    "type": "AND",
+                    "group_name": "Intermediate theory courses",
+                    "value": [
+                        { "type": "COURSE", "value": "ECON 310-1" },
+                        { "type": "COURSE", "value": "ECON 310-2" },
+                        { "type": "COURSE", "value": "ECON 311-0" }
+                    ]
+                },
+                {
+                    "type": "ANY6OF",
+                    "group_name": "Additional field courses at the 300 level",
+                    "value": [
+                        { "type": "COURSE", "value": "ECON 307-0" },
+                        { "type": "COURSE", "value": "ECON 308-0" },
+                        { "type": "COURSE", "value": "ECON 309-0" },
+                        { "type": "COURSE", "value": "ECON 310-1" },
+                        { "type": "COURSE", "value": "ECON 310-2" },
+                        { "type": "COURSE", "value": "ECON 311-0" },
+                        { "type": "COURSE", "value": "ECON 315-0" },
+                        { "type": "COURSE", "value": "ECON 316-0" },
+                        { "type": "COURSE", "value": "ECON 318-0" },
+                        { "type": "COURSE", "value": "ECON 323-1" },
+                        { "type": "COURSE", "value": "ECON 323-2" },
+                        { "type": "COURSE", "value": "ECON 324-0" },
+                        { "type": "COURSE", "value": "ECON 325-0" },
+                        { "type": "COURSE", "value": "ECON 326-0" },
+                        { "type": "COURSE", "value": "ECON 327-0" },
+                        { "type": "COURSE", "value": "ECON 328-0" },
+                        { "type": "COURSE", "value": "ECON 329-0" },
+                        { "type": "COURSE", "value": "ECON 330-0" },
+                        { "type": "COURSE", "value": "ECON 331-0" },
+                        { "type": "COURSE", "value": "ECON 333-0" },
+                        { "type": "COURSE", "value": "ECON 335-0" },
+                        { "type": "COURSE", "value": "ECON 336-0" },
+                        { "type": "COURSE", "value": "ECON 337-0" },
+                        { "type": "COURSE", "value": "ECON 339-0" },
+                        { "type": "COURSE", "value": "ECON 340-0" },
+                        { "type": "COURSE", "value": "ECON 341-0" },
+                        { "type": "COURSE", "value": "ECON 342-0" },
+                        { "type": "COURSE", "value": "ECON 343-0" },
+                        { "type": "COURSE", "value": "ECON 349-0" },
+                        { "type": "COURSE", "value": "ECON 350-0" },
+                        { "type": "COURSE", "value": "ECON 351-0" },
+                        { "type": "COURSE", "value": "ECON 354-0" },
+                        { "type": "COURSE", "value": "ECON 355-0" },
+                        { "type": "COURSE", "value": "ECON 358-0" },
+                        { "type": "COURSE", "value": "ECON 359-0" },
+                        { "type": "COURSE", "value": "ECON 360-1" },
+                        { "type": "COURSE", "value": "ECON 360-2" },
+                        { "type": "COURSE", "value": "ECON 361-0" },
+                        { "type": "COURSE", "value": "ECON 362-0" },
+                        { "type": "COURSE", "value": "ECON 371-0" },
+                        { "type": "COURSE", "value": "ECON 372-0" },
+                        { "type": "COURSE", "value": "ECON 373-0" },
+                        { "type": "COURSE", "value": "ECON 380-1" },
+                        { "type": "COURSE", "value": "ECON 380-2" },
+                        { "type": "COURSE", "value": "ECON 381-1" },
+                        { "type": "COURSE", "value": "ECON 381-2" },
+                        { "type": "COURSE", "value": "ECON 383-0" },
+                        { "type": "COURSE", "value": "ECON 398-1" },
+                        { "type": "COURSE", "value": "ECON 398-2" },
+                        { "type": "COURSE", "value": "ECON 399-0" }
+                    ]
+                },
+                {
+                    "type": "OR",
+                    "value": [
+                      { "type": "COURSE", "value": "MATH 220-1" },
+                      { "type": "COURSE", "value": "MATH 218-2" }
+                    ]
+                },
+                {
+                    "type": "OR",
+                    "value": [
+                      { "type": "COURSE", "value": "STAT 210-0" },
+                      { "type": "COURSE", "value": "MATH 314-0" }
+                    ]
+                }
+            ]            
+        }
+    },
+    {
+        "program_id": 3,
+        "program_name": "Psychology",
+        "program_type": "major",
+        "requirements": {
+            "type": "AND",
+            "value": [
+                {
+                    "type": "AND",
+                    "group_name": "Core Courses",
+                    "value": [
+                        { "type": "COURSE", "value": "PSYCH 110-0" },
+                        { "type": "COURSE", "value": "PSYCH 201-0" },
+                        { "type": "COURSE", "value": "PSYCH 205-0" }
+                    ]
+                },
+                {
+                    "type": "AND",
+                    "group_name": "Additional Courses",
+                    "note": "Must take at least 8 classes total from this block. At least 2 must be 200-level or higher. At least 3 must be 300-level or higher. A course may fulfill multiple categories.",
+                    "value": [
+                      {
+                        "type": "ANY2OF",
+                        "value": [
+                            { "type": "COURSE", "value": "PSYCH 213-0" },
+                            { "type": "COURSE", "value": "PSYCH 215-0" },
+                            { "type": "COURSE", "value": "PSYCH 303-0" },
+                            { "type": "COURSE", "value": "PSYCH 306-0" },
+                            { "type": "COURSE", "value": "PSYCH 308-0" },
+                            { "type": "COURSE", "value": "PSYCH 310-0" },
+                            { "type": "COURSE", "value": "PSYCH 311-0" },
+                            { "type": "COURSE", "value": "PSYCH 313-0" },
+                            { "type": "COURSE", "value": "PSYCH 317-0" },
+                            { "type": "COURSE", "value": "PSYCH 360-0" },
+                            { "type": "COURSE", "value": "PSYCH 364-0" },
+                            { "type": "COURSE", "value": "PSYCH 366-0" },
+                            { "type": "COURSE", "value": "PSYCH 367-0" },
+                            { "type": "COURSE", "value": "PSYCH 369-0" },
+                            { "type": "COURSE", "value": "PSYCH 390-0" }
+                        ]
+                      },
+                      {
+                        "type": "ANY2OF",
+                        "value": [
+                            { "type": "COURSE", "value": "PSYCH 221-0" },
+                            { "type": "COURSE", "value": "PSYCH 228-0" },
+                            { "type": "COURSE", "value": "PSYCH 324-0" },
+                            { "type": "COURSE", "value": "PSYCH 327-0" },
+                            { "type": "COURSE", "value": "PSYCH 328-0" },
+                            { "type": "COURSE", "value": "PSYCH 330-0" },
+                            { "type": "COURSE", "value": "PSYCH 333-0" },
+                            { "type": "COURSE", "value": "PSYCH 336-0" },
+                            { "type": "COURSE", "value": "PSYCH 370-0" },
+                            { "type": "COURSE", "value": "PSYCH 372-0" },
+                            { "type": "COURSE", "value": "PSYCH 373-0" },
+                            { "type": "COURSE", "value": "PSYCH 374-0" },
+                            { "type": "COURSE", "value": "PSYCH 378-0" },
+                            { "type": "COURSE", "value": "PSYCH 391-0" },
+                            { "type": "COURSE", "value": "COG_SCI 210-0" },
+                            { "type": "COURSE", "value": "COG_SCI 211-0" }
+                        ]
+                      },
+                      {
+                        "type": "OR",
+                        "value": [
+                            { "type": "COURSE", "value": "PSYCH 244-0" },
+                            { "type": "COURSE", "value": "PSYCH 248-0" },
+                            { "type": "COURSE", "value": "PSYCH 249-0" },
+                            { "type": "COURSE", "value": "PSYCH 340-0" },
+                            { "type": "COURSE", "value": "PSYCH 341-0" },
+                            { "type": "COURSE", "value": "PSYCH 343-0" },
+                            { "type": "COURSE", "value": "PSYCH 344-0" },
+                            { "type": "COURSE", "value": "PSYCH 345-0" },
+                            { "type": "COURSE", "value": "PSYCH 348-0" },
+                            { "type": "COURSE", "value": "PSYCH 350-0" },
+                            { "type": "COURSE", "value": "PSYCH 380-0" },
+                            { "type": "COURSE", "value": "PSYCH 381-0" },
+                            { "type": "COURSE", "value": "PSYCH 383-0" },
+                            { "type": "COURSE", "value": "PSYCH 387-0" },
+                            { "type": "COURSE", "value": "PSYCH 392-0" }
+                        ]
+                      },
+                      {
+                        "type": "OR",
+                        "value": [
+                          { "type": "COURSE", "value": "PSYCH 360-0" },
+                          { "type": "COURSE", "value": "PSYCH 364-0" },
+                          { "type": "COURSE", "value": "PSYCH 366-0" },
+                          { "type": "COURSE", "value": "PSYCH 367-0" },
+                          { "type": "COURSE", "value": "PSYCH 369-0" },
+                          { "type": "COURSE", "value": "PSYCH 370-0" },
+                          { "type": "COURSE", "value": "PSYCH 372-0" },
+                          { "type": "COURSE", "value": "PSYCH 373-0" },
+                          { "type": "COURSE", "value": "PSYCH 374-0" },
+                          { "type": "COURSE", "value": "PSYCH 378-0" },
+                          { "type": "COURSE", "value": "PSYCH 380-0" },
+                          { "type": "COURSE", "value": "PSYCH 381-0" },
+                          { "type": "COURSE", "value": "PSYCH 383-0" },
+                          { "type": "COURSE", "value": "PSYCH 387-0" },
+                          { "type": "COURSE", "value": "PSYCH 390-0" },
+                          { "type": "COURSE", "value": "PSYCH 391-0" },
+                          { "type": "COURSE", "value": "PSYCH 392-0" },
+                          { "type": "COURSE", "value": "PSYCH 397-2" },
+                          { "type": "COURSE", "value": "PSYCH 398-1" },
+                          { "type": "COURSE", "value": "PSYCH 398-2" },
+                          { "type": "COURSE", "value": "PSYCH 398-3" }
+                        ]
+                      }
+                    ]  
+                },
+                {
+                    "type": "AND",
+                    "group_name": "Related Courses",
+                    "value": [
+                        {
+                            "type": "OR",
+                            "value": [
+                                {
+                                    "type": "ANY2OF",
+                                    "value": [
+                                        { "type": "COURSE", "value": "MATH 202-0" },
+                                        { "type": "COURSE", "value": "MATH 211-0" },
+                                        { "type": "COURSE", "value": "MATH 218-1" },
+                                        { "type": "COURSE", "value": "MATH 218-2" },
+                                        { "type": "COURSE", "value": "MATH 218-3" },
+                                        { "type": "COURSE", "value": "MATH 220-1" },
+                                        { "type": "COURSE", "value": "MATH 220-2" },
+                                        { "type": "COURSE", "value": "MATH 226-0" },
+                                        { "type": "COURSE", "value": "MATH 228-1" },
+                                        { "type": "COURSE", "value": "MATH 228-2" },
+                                        { "type": "COURSE", "value": "MATH 230-1" },
+                                        { "type": "COURSE", "value": "MATH 230-2" },
+                                        { "type": "COURSE", "value": "MATH 235-0" },
+                                        { "type": "COURSE", "value": "MATH 240-0" },
+                                        { "type": "COURSE", "value": "MATH 250-0" },
+                                        { "type": "COURSE", "value": "MATH 281-1" },
+                                        { "type": "COURSE", "value": "MATH 281-2" },
+                                        { "type": "COURSE", "value": "MATH 281-3" },
+                                        { "type": "COURSE", "value": "MATH 285-1" },
+                                        { "type": "COURSE", "value": "MATH 285-2" },
+                                        { "type": "COURSE", "value": "MATH 285-3" },
+                                        { "type": "COURSE", "value": "MATH 290-1" },
+                                        { "type": "COURSE", "value": "MATH 290-2" },
+                                        { "type": "COURSE", "value": "MATH 290-3" },
+                                        { "type": "COURSE", "value": "MATH 291-1" },
+                                        { "type": "COURSE", "value": "MATH 291-2" },
+                                        { "type": "COURSE", "value": "MATH 291-3" }
+                                    ]                                      
+                                },
+                                {
+                                    "type": "AND",
+                                    "value": [
+                                        {
+                                            "type": "OR",
+                                            "value": [
+                                                { "type": "COURSE", "value": "MATH 202-0" },
+                                                { "type": "COURSE", "value": "MATH 211-0" },
+                                                { "type": "COURSE", "value": "MATH 218-1" },
+                                                { "type": "COURSE", "value": "MATH 218-2" },
+                                                { "type": "COURSE", "value": "MATH 218-3" },
+                                                { "type": "COURSE", "value": "MATH 220-1" },
+                                                { "type": "COURSE", "value": "MATH 220-2" },
+                                                { "type": "COURSE", "value": "MATH 226-0" },
+                                                { "type": "COURSE", "value": "MATH 228-1" },
+                                                { "type": "COURSE", "value": "MATH 228-2" },
+                                                { "type": "COURSE", "value": "MATH 230-1" },
+                                                { "type": "COURSE", "value": "MATH 230-2" },
+                                                { "type": "COURSE", "value": "MATH 235-0" },
+                                                { "type": "COURSE", "value": "MATH 240-0" },
+                                                { "type": "COURSE", "value": "MATH 250-0" },
+                                                { "type": "COURSE", "value": "MATH 281-1" },
+                                                { "type": "COURSE", "value": "MATH 281-2" },
+                                                { "type": "COURSE", "value": "MATH 281-3" },
+                                                { "type": "COURSE", "value": "MATH 285-1" },
+                                                { "type": "COURSE", "value": "MATH 285-2" },
+                                                { "type": "COURSE", "value": "MATH 285-3" },
+                                                { "type": "COURSE", "value": "MATH 290-1" },
+                                                { "type": "COURSE", "value": "MATH 290-2" },
+                                                { "type": "COURSE", "value": "MATH 290-3" },
+                                                { "type": "COURSE", "value": "MATH 291-1" },
+                                                { "type": "COURSE", "value": "MATH 291-2" },
+                                                { "type": "COURSE", "value": "MATH 291-3" }
+                                            ]                                              
+                                        },
+                                        {
+                                            "type": "OR",
+                                            "value": [
+                                                { "type": "COURSE", "value": "STAT 232" },
+                                                { "type": "COURSE", "value": "STAT 301-1" },
+                                                { "type": "COURSE", "value": "STAT 301-2" },
+                                                { "type": "COURSE", "value": "STAT 301-3" },
+                                                { "type": "COURSE", "value": "STAT 302" },
+                                                { "type": "COURSE", "value": "STAT 303-1" },
+                                                { "type": "COURSE", "value": "STAT 303-2" },
+                                                { "type": "COURSE", "value": "STAT 303-3" },
+                                                { "type": "COURSE", "value": "STAT 304-0" },
+                                                { "type": "COURSE", "value": "STAT 305-0" },
+                                                { "type": "COURSE", "value": "STAT 320-1" },
+                                                { "type": "COURSE", "value": "STAT 320-2" },
+                                                { "type": "COURSE", "value": "STAT 320-3" },
+                                                { "type": "COURSE", "value": "STAT 325" },
+                                                { "type": "COURSE", "value": "STAT 328" },
+                                                { "type": "COURSE", "value": "STAT 330-1" },
+                                                { "type": "COURSE", "value": "STAT 332" },
+                                                { "type": "COURSE", "value": "STAT 344" },
+                                                { "type": "COURSE", "value": "STAT 348-0" },
+                                                { "type": "COURSE", "value": "STAT 350-0" },
+                                                { "type": "COURSE", "value": "STAT 351-0" },
+                                                { "type": "COURSE", "value": "STAT 352-0" },
+                                                { "type": "COURSE", "value": "STAT 353-0" },
+                                                { "type": "COURSE", "value": "STAT 354-0" },
+                                                { "type": "COURSE", "value": "STAT 356" },
+                                                { "type": "COURSE", "value": "STAT 357" },
+                                                { "type": "COURSE", "value": "STAT 359" },
+                                                { "type": "COURSE", "value": "STAT 362-0" },
+                                                { "type": "COURSE", "value": "STAT 365" },
+                                                { "type": "COURSE", "value": "STAT 370" },
+                                                { "type": "COURSE", "value": "STAT 383" },
+                                                { "type": "COURSE", "value": "STAT 390-0" },
+                                                { "type": "COURSE", "value": "STAT 399" },
+                                                { "type": "COURSE", "value": "STAT 415-0" },
+                                                { "type": "COURSE", "value": "STAT 420-1" },
+                                                { "type": "COURSE", "value": "STAT 420-2" },
+                                                { "type": "COURSE", "value": "STAT 420-3" },
+                                                { "type": "COURSE", "value": "STAT 425" },
+                                                { "type": "COURSE", "value": "STAT 430-1" },
+                                                { "type": "COURSE", "value": "STAT 430-2" },
+                                                { "type": "COURSE", "value": "STAT 435" },
+                                                { "type": "COURSE", "value": "STAT 439" },
+                                                { "type": "COURSE", "value": "STAT 440-0" },
+                                                { "type": "COURSE", "value": "STAT 455" },
+                                                { "type": "COURSE", "value": "STAT 456" },
+                                                { "type": "COURSE", "value": "STAT 457" },
+                                                { "type": "COURSE", "value": "STAT 461" },
+                                                { "type": "COURSE", "value": "STAT 465" },
+                                                { "type": "COURSE", "value": "STAT 499" },
+                                                { "type": "COURSE", "value": "STAT 595-0" }
+                                            ]                                              
+                                          }                                  
+                                    ]
+                                },
+                                {
+                                    "type": "ANY3OF",
+                                    "value": [
+                                        { "type": "COURSE", "value": "MATH 202-0" },
+                                        { "type": "COURSE", "value": "MATH 211-0" },
+                                        { "type": "COURSE", "value": "MATH 218-1" },
+                                        { "type": "COURSE", "value": "MATH 218-2" },
+                                        { "type": "COURSE", "value": "MATH 218-3" },
+                                        { "type": "COURSE", "value": "MATH 220-1" },
+                                        { "type": "COURSE", "value": "MATH 220-2" },
+                                        { "type": "COURSE", "value": "MATH 226-0" },
+                                        { "type": "COURSE", "value": "MATH 228-1" },
+                                        { "type": "COURSE", "value": "MATH 228-2" },
+                                        { "type": "COURSE", "value": "MATH 230-1" },
+                                        { "type": "COURSE", "value": "MATH 230-2" },
+                                        { "type": "COURSE", "value": "MATH 235-0" },
+                                        { "type": "COURSE", "value": "MATH 240-0" },
+                                        { "type": "COURSE", "value": "MATH 250-0" },
+                                        { "type": "COURSE", "value": "MATH 281-1" },
+                                        { "type": "COURSE", "value": "MATH 281-2" },
+                                        { "type": "COURSE", "value": "MATH 281-3" },
+                                        { "type": "COURSE", "value": "MATH 285-1" },
+                                        { "type": "COURSE", "value": "MATH 285-2" },
+                                        { "type": "COURSE", "value": "MATH 285-3" },
+                                        { "type": "COURSE", "value": "MATH 290-1" },
+                                        { "type": "COURSE", "value": "MATH 290-2" },
+                                        { "type": "COURSE", "value": "MATH 290-3" },
+                                        { "type": "COURSE", "value": "MATH 291-1" },
+                                        { "type": "COURSE", "value": "MATH 291-2" },
+                                        { "type": "COURSE", "value": "MATH 291-3" },
+                                        { "type": "COURSE", "value": "COG_SCI 202-0" },
+                                        { "type": "COURSE", "value": "COG_SCI 207-0" },
+                                        { "type": "COURSE", "value": "COMP_SCI 110-0" },
+                                        { "type": "COURSE", "value": "COMP_SCI 111-0" },
+                                        { "type": "COURSE", "value": "COMP_SCI 130-0" },
+                                        { "type": "COURSE", "value": "COMP_SCI 150-0" },
+                                        { "type": "COURSE", "value": "PHIL 327-0" },
+                                        { "type": "COURSE", "value": "STAT 232" },
+                                        { "type": "COURSE", "value": "STAT 301-1" },
+                                        { "type": "COURSE", "value": "STAT 301-2" },
+                                        { "type": "COURSE", "value": "STAT 301-3" },
+                                        { "type": "COURSE", "value": "STAT 302" },
+                                        { "type": "COURSE", "value": "STAT 303-1" },
+                                        { "type": "COURSE", "value": "STAT 303-2" },
+                                        { "type": "COURSE", "value": "STAT 303-3" },
+                                        { "type": "COURSE", "value": "STAT 304-0" },
+                                        { "type": "COURSE", "value": "STAT 305-0" },
+                                        { "type": "COURSE", "value": "STAT 320-1" },
+                                        { "type": "COURSE", "value": "STAT 320-2" },
+                                        { "type": "COURSE", "value": "STAT 320-3" },
+                                        { "type": "COURSE", "value": "STAT 325" },
+                                        { "type": "COURSE", "value": "STAT 328" },
+                                        { "type": "COURSE", "value": "STAT 330-1" },
+                                        { "type": "COURSE", "value": "STAT 332" },
+                                        { "type": "COURSE", "value": "STAT 344" },
+                                        { "type": "COURSE", "value": "STAT 348-0" },
+                                        { "type": "COURSE", "value": "STAT 350-0" },
+                                        { "type": "COURSE", "value": "STAT 351-0" },
+                                        { "type": "COURSE", "value": "STAT 352-0" },
+                                        { "type": "COURSE", "value": "STAT 353-0" },
+                                        { "type": "COURSE", "value": "STAT 354-0" },
+                                        { "type": "COURSE", "value": "STAT 356" },
+                                        { "type": "COURSE", "value": "STAT 357" },
+                                        { "type": "COURSE", "value": "STAT 359" },
+                                        { "type": "COURSE", "value": "STAT 362-0" },
+                                        { "type": "COURSE", "value": "STAT 365" },
+                                        { "type": "COURSE", "value": "STAT 370" },
+                                        { "type": "COURSE", "value": "STAT 383" },
+                                        { "type": "COURSE", "value": "STAT 390-0" },
+                                        { "type": "COURSE", "value": "STAT 399" },
+                                        { "type": "COURSE", "value": "STAT 415-0" },
+                                        { "type": "COURSE", "value": "STAT 420-1" },
+                                        { "type": "COURSE", "value": "STAT 420-2" },
+                                        { "type": "COURSE", "value": "STAT 420-3" },
+                                        { "type": "COURSE", "value": "STAT 425" },
+                                        { "type": "COURSE", "value": "STAT 430-1" },
+                                        { "type": "COURSE", "value": "STAT 430-2" },
+                                        { "type": "COURSE", "value": "STAT 435" },
+                                        { "type": "COURSE", "value": "STAT 439" },
+                                        { "type": "COURSE", "value": "STAT 440-0" },
+                                        { "type": "COURSE", "value": "STAT 455" },
+                                        { "type": "COURSE", "value": "STAT 456" },
+                                        { "type": "COURSE", "value": "STAT 457" },
+                                        { "type": "COURSE", "value": "STAT 461" },
+                                        { "type": "COURSE", "value": "STAT 465" },
+                                        { "type": "COURSE", "value": "STAT 499" },
+                                        { "type": "COURSE", "value": "STAT 595-0" },
+                                        { "type": "COURSE", "value": "PSYCH 380-0" },
+                                        { "type": "COURSE", "value": "ANTHRO 213" },
+                                        { "type": "COURSE", "value": "ANTHRO 275" },
+                                        { "type": "COURSE", "value": "ANTHRO 309" },
+                                        { "type": "COURSE", "value": "ANTHRO 312" },
+                                        { "type": "COURSE", "value": "ANTHRO 317" },
+                                        { "type": "COURSE", "value": "ANTHRO 359" },
+                                        { "type": "COURSE", "value": "ANTHRO 375" },
+                                        { "type": "COURSE", "value": "ANTHRO 386" },
+                                        { "type": "COURSE", "value": "ASTRON 101" },
+                                        { "type": "COURSE", "value": "ASTRON 102" },
+                                        { "type": "COURSE", "value": "ASTRON 103" },
+                                        { "type": "COURSE", "value": "ASTRON 106" },
+                                        { "type": "COURSE", "value": "ASTRON 111" },
+                                        { "type": "COURSE", "value": "ASTRON 120" },
+                                        { "type": "COURSE", "value": "ASTRON 220-1" },
+                                        { "type": "COURSE", "value": "ASTRON 220-2" },
+                                        { "type": "COURSE", "value": "ASTRON 305" },
+                                        { "type": "COURSE", "value": "ASTRON 390" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 103" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 104" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 109" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 150" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 164" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 201" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 202" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 203" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 301" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 307" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 310" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 333" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 354" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 377" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 381" },
+                                        { "type": "COURSE", "value": "BIOL_SCI 393" },
+                                        { "type": "COURSE", "value": "CHEM 131" },
+                                        { "type": "COURSE", "value": "CHEM 132" },
+                                        { "type": "COURSE", "value": "CHEM 151" },
+                                        { "type": "COURSE", "value": "CHEM 152" },
+                                        { "type": "COURSE", "value": "CHEM 171" },
+                                        { "type": "COURSE", "value": "CHEM 172" },
+                                        { "type": "COURSE", "value": "CHEM 201" },
+                                        { "type": "COURSE", "value": "CHEM 215-1" },
+                                        { "type": "COURSE", "value": "CHEM 215-2" },
+                                        { "type": "COURSE", "value": "CHEM 215-3" },
+                                        { "type": "COURSE", "value": "CHEM 217-1" },
+                                        { "type": "COURSE", "value": "CHEM 217-2" },
+                                        { "type": "COURSE", "value": "CHEM 217-3" },
+                                        { "type": "COURSE", "value": "CIV_ENV 203" },
+                                        { "type": "COURSE", "value": "CSD 112" },
+                                        { "type": "COURSE", "value": "CSD 202" },
+                                        { "type": "COURSE", "value": "CSD 301" },
+                                        { "type": "COURSE", "value": "CSD 302" },
+                                        { "type": "COURSE", "value": "CSD 303" },
+                                        { "type": "COURSE", "value": "CSD 305" },
+                                        { "type": "COURSE", "value": "CSD 310" },
+                                        { "type": "COURSE", "value": "CSD 318" },
+                                        { "type": "COURSE", "value": "EARTH 101" },
+                                        { "type": "COURSE", "value": "EARTH 105" },
+                                        { "type": "COURSE", "value": "EARTH 106" },
+                                        { "type": "COURSE", "value": "EARTH 114" },
+                                        { "type": "COURSE", "value": "EARTH 180" },
+                                        { "type": "COURSE", "value": "EARTH 201" },
+                                        { "type": "COURSE", "value": "EARTH 202" },
+                                        { "type": "COURSE", "value": "EARTH 203" },
+                                        { "type": "COURSE", "value": "EARTH 300" },
+                                        { "type": "COURSE", "value": "EARTH 301" },
+                                        { "type": "COURSE", "value": "EARTH 310" },
+                                        { "type": "COURSE", "value": "EARTH 314" },
+                                        { "type": "COURSE", "value": "EARTH 323" },
+                                        { "type": "COURSE", "value": "EARTH 324" },
+                                        { "type": "COURSE", "value": "EARTH 340" },
+                                        { "type": "COURSE", "value": "EARTH 341" },
+                                        { "type": "COURSE", "value": "EARTH 342" },
+                                        { "type": "COURSE", "value": "EARTH 343" },
+                                        { "type": "COURSE", "value": "EARTH 370" },
+                                        { "type": "COURSE", "value": "EARTH 371" },
+                                        { "type": "COURSE", "value": "ENVR_SCI 201" },
+                                        { "type": "COURSE", "value": "ENVR_SCI 202" },
+                                        { "type": "COURSE", "value": "ENVR_SCI 203" },
+                                        { "type": "COURSE", "value": "GEN_LA 280-1" },
+                                        { "type": "COURSE", "value": "ISEN 220" },
+                                        { "type": "COURSE", "value": "LING 250" },
+                                        { "type": "COURSE", "value": "LING 350" },
+                                        { "type": "COURSE", "value": "MATH 327" },
+                                        { "type": "COURSE", "value": "NEUROSCI 102" },
+                                        { "type": "COURSE", "value": "NEUROSCI 202" },
+                                        { "type": "COURSE", "value": "NEUROSCI 206" },
+                                        { "type": "COURSE", "value": "NEUROSCI 320" },
+                                        { "type": "COURSE", "value": "NEUROSCI 360" },
+                                        { "type": "COURSE", "value": "NEUROSCI 377" },
+                                        { "type": "COURSE", "value": "PHYSICS 103" },
+                                        { "type": "COURSE", "value": "PHYSICS 125-1" },
+                                        { "type": "COURSE", "value": "PHYSICS 125-2" },
+                                        { "type": "COURSE", "value": "PHYSICS 125-3" },
+                                        { "type": "COURSE", "value": "PHYSICS 130-1" },
+                                        { "type": "COURSE", "value": "PHYSICS 130-2" },
+                                        { "type": "COURSE", "value": "PHYSICS 130-3" },
+                                        { "type": "COURSE", "value": "PHYSICS 135-1" },
+                                        { "type": "COURSE", "value": "PHYSICS 135-2" },
+                                        { "type": "COURSE", "value": "PHYSICS 135-3" },
+                                        { "type": "COURSE", "value": "PHYSICS 140-1" },
+                                        { "type": "COURSE", "value": "PHYSICS 140-2" },
+                                        { "type": "COURSE", "value": "PHYSICS 140-3" },
+                                        { "type": "COURSE", "value": "PHYSICS 239" },
+                                        { "type": "COURSE", "value": "PHYSICS 312" },
+                                        { "type": "COURSE", "value": "PHYSICS 357" },
+                                        { "type": "CREDIT", "value": "AP Biology" },
+                                        { "type": "CREDIT", "value": "AP Chemistry" },
+                                        { "type": "CREDIT", "value": "AP Environmental Science" },
+                                        { "type": "CREDIT", "value": "AP Physics" }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "program_id": 4,
+        "program_name": "Political Science",
+        "program_type": "major",
+        "note": "Choose 200-level courses from at least two subfields: American politics, comparative politics, international relations, and political theory",
+        "requirements": {
+            "type": "AND",
+            "value": [
+                {
+                    "type": "ANY3OF",
+                    "group_name": "Gateway courses",
+                    "note": "Advised to complete by the end of sophomore year",
+                    "value": [
+                      { "type": "COURSE", "value": "POLI_SCI 201-0" },
+                      { "type": "COURSE", "value": "POLI_SCI 220-0" },
+                      { "type": "COURSE", "value": "POLI_SCI 230-0" },
+                      { "type": "COURSE", "value": "POLI_SCI 240-0" },
+                      { "type": "COURSE", "value": "POLI_SCI 250-0" }
+                    ]
+                },
+                {
+                    "type": "OR",
+                    "group_name": "Methodology course",
+                    "value": [
+                      { "type": "COURSE", "value": "POLI_SCI 210-0" },
+                      { "type": "COURSE", "value": "POLI_SCI 211-0" },
+                      { "type": "COURSE", "value": "POLI_SCI 212-0" },
+                      { "type": "COURSE", "value": "POLI_SCI 310-0" },
+                      { "type": "COURSE", "value": "POLI_SCI 312-0" }
+                    ]
+                },
+                { "type": "COURSE", "value": "POLI_SCI 395-0" },
+                {
+                    "type": "ANY7OF",
+                    "group_name": "Additional 300-level courses in political science",
+                    "note1": "At most one unit of Chicago Field Studies (chosen from CFS 391-0, CFS 394-0, or CFS 397-0) may substitute for one course.",
+                    "note2": "At most two units of POLI_SCI 399-0 may count toward the 300-level requirement for the major",
+                    "note3": "Only one additional POLI_SCI 395-0 credit beyond the one credit required may count towards the 300-level requirement for the major.",
+                    "note4": "Honors thesis seminars POLI_SCI 398-1 and POLI_SCI 398-2 do not count toward the major.",
+                    "value": [
+                        { "type": "COURSE", "value": "POLI_SCI 301-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 302-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 303-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 304-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 306-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 307-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 308-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 308-SA" },
+                        { "type": "COURSE", "value": "POLI_SCI 309-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 310-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 312-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 320-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 321-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 323-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 324-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 325-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 326-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 327-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 328-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 329-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 331-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 332-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 333-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 334-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 335-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 336-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 337-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 338-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 340-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 341-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 342-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 343-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 344-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 345-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 346-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 347-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 348-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 349-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 350-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 351-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 352-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 353-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 354-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 355-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 356-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 358-SA" },
+                        { "type": "COURSE", "value": "POLI_SCI 359-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 361-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 362-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 363-SA" },
+                        { "type": "COURSE", "value": "POLI_SCI 364-SA" },
+                        { "type": "COURSE", "value": "POLI_SCI 365-SA" },
+                        { "type": "COURSE", "value": "POLI_SCI 366-SA" },
+                        { "type": "COURSE", "value": "POLI_SCI 368-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 369-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 373-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 374-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 376-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 377-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 378-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 379-SA" },
+                        { "type": "COURSE", "value": "POLI_SCI 381-SA" },
+                        { "type": "COURSE", "value": "POLI_SCI 382-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 383-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 384-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 388-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 389-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 390-0" },
+                        { "type": "COURSE", "value": "POLI_SCI 394-LK" },
+                        { "type": "COURSE", "value": "POLI_SCI 398-1" },
+                        { "type": "COURSE", "value": "POLI_SCI 398-2" },
+                        { "type": "COURSE", "value": "POLI_SCI 399-0" }
+                    ]
+                }                  
+            ]
+        }
+    },
+    {
+        "program_id": 5,
+        "program_name": "Biological Sciences",
+        "program_type": "major",
+        "requirements": {
+            "type": "AND",
+            "value": [
+                {
+                    "type": "AND",
+                    "group_name": "Core Courses",
+                    "value": [
+                        { "type": "COURSE", "value": "BIOL_SCI 201-0" },
+                        { "type": "COURSE", "value": "BIOL_SCI 202-0" },
+                        { "type": "COURSE", "value": "BIOL_SCI 203-0" },
+                        { "type": "COURSE", "value": "BIOL_SCI 232-0" },
+                        { "type": "COURSE", "value": "BIOL_SCI 233-0" },
+                        { "type": "COURSE", "value": "BIOL_SCI 234-0" },
+                        { "type": "COURSE", "value": "BIOL_SCI 301-0" }
+                    ]
+                },
+                {
+                    "type": "ANY2OF",
+                    "group_name": "300-level electives",
+                    "value": [
+                      { "type": "COURSE", "value": "BIOL_SCI 301-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 302-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 303-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 307-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 310-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 315-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 319-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 323-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 325-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 327-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 328-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 332-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 333-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 336-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 337-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 338-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 339-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 341-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 342-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 345-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 346-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 347-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 349-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 350-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 354-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 355-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 360-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 361-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 363-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 377-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 378-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 380-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 381-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 390-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 391-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 392-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 393-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 395-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 396-0" },
+                      { "type": "COURSE", "value": "BIOL_SCI 397-0" }
+                    ]
+                },
+                {
+                    "type": "OR",
+                    "group_name": "Concentration Courses",
+                    "note": "Students can also create their own 'Interdisciplinary Biology' concentration, consisting of a thematic set of three, 300- level Biol Sci courses approved by the biology program.",
+                    "value": [
+                        {
+                            "type": "ANY3OF",
+                            "group_name": "Molecular Genetics and Genomics Concentration",
+                            "value": [
+                              { "type": "COURSE", "value": "BIOL_SCI 332-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 341-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 354-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 378-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 390-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 391-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 392-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 393-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 395-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 396-0" }
+                            ]
+                        },
+                        {
+                            "type": "ANY3OF",
+                            "group_name": "Cell and Developmental Biology Concentration",
+                            "value": [
+                              { "type": "COURSE", "value": "BIOL_SCI 310-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 315-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 319-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 327-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 328-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 355-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 360-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 377-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 380-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 381-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 390-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 391-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 392-0" }
+                            ]
+                        },
+                        {
+                            "type": "ANY3OF",
+                            "group_name": "Human Health and Disease Concentration",
+                            "value": [
+                              { "type": "COURSE", "value": "BIOL_SCI 302-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 310-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 319-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 325-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 327-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 328-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 355-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 360-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 377-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 380-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 381-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 391-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 392-0" }
+                            ]
+                        },
+                        {
+                            "type": "ANY3OF",
+                            "group_name": "Ecology, Evolution, and Concentration Biology Concentration",
+                            "value": [
+                              { "type": "COURSE", "value": "BIOL_SCI 332-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 333-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 336-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 337-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 339-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 341-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 342-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 345-0", "note": "Only able to be applied when the topic is 'Forerunners of Mammals'" },
+                              { "type": "COURSE", "value": "BIOL_SCI 346-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 347-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 349-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 350-0" }
+                            ]
+                        },
+                        {
+                            "type": "ANY3OF",
+                            "group_name": "Biochemistry and Biophysics Concentration",
+                            "value": [
+                              { "type": "COURSE", "value": "BIOL_SCI 323-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 338-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 354-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 360-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 361-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 363-0" }
+                            ]
+                        },
+                        {
+                            "type": "ANY3OF",
+                            "group_name": "Computational and Systems Biology Concentration",
+                            "note": "Coding requirement for this concentration may be satisfied by COMP_SCI 110-0, COMP_SCI 111-0, or NICO 101-0 plus NICO 102-0. One unit of programming coursework may substitute for one of the two required 300-level Biol Sci electives.",
+                            "value": [
+                              { "type": "COURSE", "value": "BIOL_SCI 323-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 337-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 338-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 354-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 378-0" },
+                              { "type": "COURSE", "value": "CHEM_ENG 379-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 345-0", "note": "Only able to be applied when the topic is 'Principles and Methods in Systems Biology" },
+                              { "type": "COURSE", "value": "ES_APPM 495-0", "note": "Only able to be applied when the topic is 'Introduction to the Analysis of RNA Sequencing Data" }
+                            ]
+                        },
+                        {
+                            "type": "ANY3OF",
+                            "group_name": "Molecular Neurobiology Concentration",
+                            "value": [
+                              { "type": "COURSE", "value": "BIOL_SCI 302-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 303-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 307-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 325-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 360-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 391-0" },
+                              { "type": "COURSE", "value": "BIOL_SCI 392-0" }
+                            ]      
+                        }                                                                                  
+                    ]
+                }                  
+            ]
+        }
+    }
+]
