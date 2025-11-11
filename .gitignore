@@ -22,4 +22,12 @@ dist/
 # === Build Artifacts ===
 build/
 .cache/
-*.lock
+package-lock.json
+
+# === Replit ===
+.pythonlibs/
+.config/
+
+# === Database ===
+*.db
+database.db
