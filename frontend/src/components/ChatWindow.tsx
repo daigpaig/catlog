@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ChatBubble from "./ChatBubble";
+import { API_BASE_URL } from "@/config/api";
 
 type Message = {
   role: "user" | "assistant";
@@ -18,11 +19,11 @@ const ChatWindow = () => {
     setMessages(newMessages);
     setInput("");
 
-    const res = await fetch("http://localhost:8000/chat", {
+    const res = await fetch(`${API_BASE_URL}/chat`, {
       method: "POST",
       body: JSON.stringify({
         message: input,
-        user_id: "wpe1403",
+        user_id: "demo_user",
         timestamp: new Date().toISOString(),
         majors: [],
         minors: [],

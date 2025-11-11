@@ -36,18 +36,18 @@ const dayIndexMap: Record<string, number> = {
 };
 const sample_schedules = [
   {
-    id: 12,
-    netid: "wpe1403",
-    name: "Spring 2025 Schedule 1",
+    id: 1,
+    netid: "student",
+    name: "Spring 2025",
     term: "Spring 2025",
-    created: "2025/04/20 05:31:31",
+    created: new Date().toISOString(),
   },
   {
-    id: 143,
-    netid: "wpe1403",
-    name: "Fall 2025 Schedule 1",
+    id: 2,
+    netid: "student",
+    name: "Fall 2025",
     term: "Fall 2025",
-    created: "2025/08/14 14:00:03",
+    created: new Date().toISOString(),
   },
 ];
 

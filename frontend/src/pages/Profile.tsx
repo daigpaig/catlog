@@ -4,16 +4,16 @@ import SchedulingPreferences from "@/components/SchedulingPreferences";
 import React from "react";
 
 const sampleProfile = {
-  netid: "wpe1403",
-  full_name: "Daigo Moriwake",
-  majors: ["Data Science"],
-  minors: ["Italian", "Transportation & Logistics"],
-  classes_already_taken: ["STAT 303-3", "MATH 240"],
-  vocational_interests: ["NLP", "Transportation Modeling"],
-  favorite_profs: ["Voigt", "Besler"],
+  netid: "student",
+  full_name: "Student Profile",
+  majors: ["Computer Science"],
+  minors: ["Mathematics"],
+  classes_already_taken: ["CS 101", "MATH 220"],
+  vocational_interests: ["Software Engineering", "Data Analysis"],
+  favorite_profs: [],
   disliked_profs: [],
-  earliest_class_time: "10:00",
-  locked_classes: ["CS214"],
+  earliest_class_time: "09:00",
+  locked_classes: [],
 };
 
 const Profile = () => {
