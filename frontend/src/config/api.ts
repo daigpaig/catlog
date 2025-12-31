@@ -1,10 +1,13 @@
 const getApiBaseUrl = (): string => {
-  if (import.meta.env.DEV) {
-    return 'http://localhost:8000';
+  // Use environment variable if set, otherwise default to localhost
+  if (import.meta.env.VITE_API_BASE_URL) {
+    return import.meta.env.VITE_API_BASE_URL;
   }
   
-  const replitDomain = window.location.hostname;
-  return `https://${replitDomain.replace(/^[^.]+/, (match) => match + '-8000')}`;
+  // Development default
+  return import.meta.env.DEV 
+    ? 'http://localhost:8000'
+    : 'http://localhost:8000'; // Change this to your production API URL
 };
 
 export const API_BASE_URL = getApiBaseUrl();
