@@ -1,7 +1,7 @@
 from sqlmodel import Session, select
-from database import engine
-from models.db_models import UserProfileDB
-from schemas.user import UserProfile
+from ..database import engine
+from ..models.db_models import UserProfileDB
+from ..schemas.user import UserProfile
 from typing import Optional
 
 def get_user_by_netid(netid: str) -> Optional[UserProfileDB]:

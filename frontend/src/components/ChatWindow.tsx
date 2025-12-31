@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ChatBubble from "./ChatBubble";
-import { API_BASE_URL } from "@/config/api";
+import { apiService } from "@/services/api";
 
 type Message = {
   role: "user" | "assistant";
@@ -10,35 +10,38 @@ type Message = {
 const ChatWindow = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSend = async () => {
+    if (!input.trim() || loading) return;
+
     const newMessages = [...messages, { role: "user", content: input }];
-
-    console.log("Sending message:", { role: "user", content: input });
-
     setMessages(newMessages);
     setInput("");
+    setLoading(true);
 
-    const res = await fetch(`${API_BASE_URL}/chat`, {
-      method: "POST",
-      body: JSON.stringify({
+    try {
+      const data = await apiService.post<{ response: string }>("/chat", {
         message: input,
-        user_id: "demo_user",
         timestamp: new Date().toISOString(),
-        majors: [],
-        minors: [],
-        schedule_preferences: "",
-        self_description: "",
-        locked_classes: [],
-      }),
-      headers: { "Content-Type": "application/json" },
-    });
+      });
 
-    const data = await res.json();
-    setMessages([
-      ...newMessages,
-      { role: "assistant", content: data.response },
-    ]);
+      setMessages([
+        ...newMessages,
+        { role: "assistant", content: data.response },
+      ]);
+    } catch (error) {
+      console.error("Chat error:", error);
+      setMessages([
+        ...newMessages,
+        {
+          role: "assistant",
+          content: "Sorry, something went wrong. Please try again.",
+        },
+      ]);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

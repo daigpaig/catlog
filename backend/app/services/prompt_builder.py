@@ -1,4 +1,4 @@
-from schemas.chat import ChatRequest
+from ..schemas.chat import ChatRequest
 
 def build_user_context(chat_request: ChatRequest) -> str:
     parts = []

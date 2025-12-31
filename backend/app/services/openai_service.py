@@ -1,8 +1,8 @@
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
-from services.prompt_builder import build_user_context
-from schemas.chat import ChatRequest
+from ..services.prompt_builder import build_user_context
+from ..schemas.chat import ChatRequest
 
 load_dotenv()
 client = OpenAI(api_key = os.getenv("OPENAI_API_KEY"))

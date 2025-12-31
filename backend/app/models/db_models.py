@@ -4,6 +4,8 @@ from typing import Optional, List
 class UserProfileDB(SQLModel, table=True):
     netid: str = Field(primary_key=True)
     name: str
+    email: str = Field(unique=True, index=True)
+    hashed_password: str
     majors: List[str] = Field(sa_column=Column(JSON))
     minors: Optional[List[str]] = Field(default_factory=list, sa_column=Column(JSON))
     
