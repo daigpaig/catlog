@@ -18,6 +18,8 @@ interface UserProfile {
   earliest_class_time?: string;
   locked_classes?: string[];
   self_description?: string;
+  unavailable_times?: string[];
+  prefer_avoid_times?: string[];
 }
 
 const Profile = () => {
@@ -26,18 +28,20 @@ const Profile = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    const fetchProfile = async () => {
-      try {
-        const data = await apiService.get<UserProfile>("/profile/me");
-        setProfile(data);
-      } catch (err) {
-        setError(err instanceof Error ? err.message : "Failed to load profile");
-      } finally {
-        setLoading(false);
-      }
-    };
+  const fetchProfile = async () => {
+    try {
+      setLoading(true);
+      const data = await apiService.get<UserProfile>("/profile/me");
+      setProfile(data);
+      setError(null);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to load profile");
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  useEffect(() => {
     fetchProfile();
   }, []);
 
@@ -86,8 +90,41 @@ const Profile = () => {
           disliked_profs={profile.disliked_profs || []}
           earliest_class_time={profile.earliest_class_time || ""}
           locked_classes={profile.locked_classes || []}
+          self_description={profile.self_description || ""}
+          onUpdate={fetchProfile}
+          fullProfile={{
+            netid: profile.netid,
+            majors: profile.majors,
+            minors: profile.minors,
+            classes_already_taken: profile.classes_already_taken,
+            vocational_interests: profile.vocational_interests,
+            favorite_profs: profile.favorite_profs,
+            disliked_profs: profile.disliked_profs,
+            earliest_class_time: profile.earliest_class_time,
+            locked_classes: profile.locked_classes,
+            self_description: profile.self_description,
+          }}
         />
-        <SchedulingPreferences />
+        <SchedulingPreferences
+          netid={profile.netid}
+          unavailable_times={profile.unavailable_times || []}
+          prefer_avoid_times={profile.prefer_avoid_times || []}
+          onUpdate={fetchProfile}
+          fullProfile={{
+            netid: profile.netid,
+            majors: profile.majors,
+            minors: profile.minors,
+            classes_already_taken: profile.classes_already_taken,
+            vocational_interests: profile.vocational_interests,
+            favorite_profs: profile.favorite_profs,
+            disliked_profs: profile.disliked_profs,
+            earliest_class_time: profile.earliest_class_time,
+            locked_classes: profile.locked_classes,
+            self_description: profile.self_description,
+            unavailable_times: profile.unavailable_times,
+            prefer_avoid_times: profile.prefer_avoid_times,
+          }}
+        />
       </div>
     </div>
   );

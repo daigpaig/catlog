@@ -93,3 +93,7 @@ htmlcov/
 *.temp
 *.bak
 *.swp
+
+# === Generated Data ===
+backend/app/data_gen/
+**/data_gen/

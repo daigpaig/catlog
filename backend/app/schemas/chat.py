@@ -3,7 +3,7 @@ from typing import Optional
 
 class ChatRequest(BaseModel):
     message: str
-    user_id: str  # Will be populated from authenticated user
+    user_id: Optional[str] = None  # Will be populated from authenticated user if not provided
     timestamp: Optional[str] = None
     majors: Optional[list[str]] = None
     minors: Optional[list[str]] = None

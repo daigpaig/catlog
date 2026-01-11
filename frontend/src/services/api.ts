@@ -1,8 +1,8 @@
 import { API_BASE_URL } from '../config/api';
-import type { UserResponse, LoginRequest, TokenResponse } from '../types/api';
+import type { UserResponse, LoginRequest, TokenResponse, Schedule, ScheduleCourse } from '../types/api';
 
 // Re-export types for backward compatibility
-export type { UserResponse, LoginRequest, TokenResponse };
+export type { UserResponse, LoginRequest, TokenResponse, Schedule, ScheduleCourse };
 
 // Re-export for compatibility
 export type { UserResponse };
@@ -195,6 +195,63 @@ class ApiService {
 
   async delete<T>(endpoint: string): Promise<T> {
     return this.request<T>(endpoint, { method: 'DELETE' });
+  }
+
+  // Schedule methods
+  async getSchedules(): Promise<Schedule[]> {
+    return this.get<Schedule[]>('/schedule');
+  }
+
+  async getSchedule(scheduleId: number): Promise<Schedule> {
+    return this.get<Schedule>(`/schedule/${scheduleId}`);
+  }
+
+  async createSchedule(schedule: { name: string; term: string }): Promise<Schedule> {
+    return this.post<Schedule>('/schedule', schedule);
+  }
+
+  async updateSchedule(scheduleId: number, schedule: { name?: string; term?: string }): Promise<Schedule> {
+    return this.put<Schedule>(`/schedule/${scheduleId}`, schedule);
+  }
+
+  async deleteSchedule(scheduleId: number): Promise<{ message: string }> {
+    return this.delete<{ message: string }>(`/schedule/${scheduleId}`);
+  }
+
+  async getScheduleCourses(scheduleId: number): Promise<ScheduleCourse[]> {
+    return this.get<ScheduleCourse[]>(`/schedule/${scheduleId}/courses`);
+  }
+
+  async addScheduleCourse(scheduleId: number, course: Omit<ScheduleCourse, 'id' | 'schedule_id'>): Promise<{ message: string; id: number }> {
+    console.log(`API: Adding course to schedule ${scheduleId}:`, course);
+    try {
+      const result = await this.post<{ message: string; id: number }>(`/schedule/${scheduleId}/courses`, course);
+      console.log(`API: Add course response:`, result);
+      return result;
+    } catch (error: any) {
+      console.error(`API: Error adding course:`, error);
+      throw error;
+    }
+  }
+
+  async removeScheduleCourse(scheduleId: number, courseId: number): Promise<{ message: string }> {
+    return this.delete<{ message: string }>(`/schedule/${scheduleId}/courses/${courseId}`);
+  }
+
+  // Profile methods
+  async updateProfile(profile: {
+    netid: string;
+    majors: string[];
+    minors?: string[];
+    vocational_interests?: string[];
+    favorite_profs?: string[];
+    disliked_profs?: string[];
+    self_description?: string;
+    unavailable_times?: string[];
+    prefer_avoid_times?: string[];
+    [key: string]: any;
+  }): Promise<{ message: string; profile: any }> {
+    return this.put<{ message: string; profile: any }>('/profile/me', profile);
   }
 }
 

@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import WeeklyCalendar from "../components/WeeklyCalendar";
 import ChatWindow from "../components/ChatWindow";
 import HeaderBar from "../components/HeaderBar";
+import { CourseHoverProvider } from "../contexts/CourseHoverContext";
 
 function Home() {
   const [leftWidth, setLeftWidth] = useState(400);
@@ -31,33 +32,35 @@ function Home() {
   };
 
   return (
-    <div className="flex flex-col h-screen">
-      <HeaderBar />
-      <div
-        className={`flex w-screen h-full overflow-hidden ${
-          isDragging ? "select-none" : ""
-        }`}
-      >
-        {/* Chat */}
+    <CourseHoverProvider>
+      <div className="flex flex-col h-screen">
+        <HeaderBar />
         <div
-          style={{ width: `${leftWidth}px` }}
-          className="h-full overflow-auto"
+          className={`flex w-screen h-full overflow-hidden ${
+            isDragging ? "select-none" : ""
+          }`}
         >
-          <ChatWindow />
-        </div>
+          {/* Chat */}
+          <div
+            style={{ width: `${leftWidth}px` }}
+            className="h-full overflow-auto"
+          >
+            <ChatWindow />
+          </div>
 
-        {/* Resizer */}
-        <div
-          onMouseDown={handleMouseDown}
-          className="w-2 cursor-col-resize bg-gray-600 hover:bg-gray-400"
-        />
+          {/* Resizer */}
+          <div
+            onMouseDown={handleMouseDown}
+            className="w-2 cursor-col-resize bg-gray-600 hover:bg-gray-400"
+          />
 
-        {/* Schedule */}
-        <div className="flex-1 h-full overflow-auto">
-          <WeeklyCalendar />
+          {/* Schedule */}
+          <div className="flex-1 h-full overflow-auto">
+            <WeeklyCalendar />
+          </div>
         </div>
       </div>
-    </div>
+    </CourseHoverProvider>
   );
 }
 

@@ -23,8 +23,12 @@ def update_user_profile(netid: str, profile: UserProfile) -> Optional[UserProfil
         profile_db = session.get(UserProfileDB, netid)
         if not profile_db:
             return None
-        for field, value in profile.dict().items():
-            setattr(profile_db, field, value)
+        # Only update fields that are in the profile and exist on the model
+        profile_dict = profile.model_dump(exclude={'netid'})  # Exclude netid (primary key)
+        for field, value in profile_dict.items():
+            if hasattr(profile_db, field):
+                setattr(profile_db, field, value)
+        session.add(profile_db)
         session.commit()
         session.refresh(profile_db)
         return profile_db

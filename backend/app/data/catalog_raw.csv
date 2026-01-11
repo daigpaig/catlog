@@ -1,0 +1,17 @@
+subject,number,title,desc,school,level,distros,instructors
+COMP_SCI,111-0,Introduction to Computer Science,Fundamental concepts of programming and computer science. Covers basic data structures and algorithms.,WCAS,100,2,"Jane Doe|John Smith"
+COMP_SCI,211-0,Data Structures,Advanced data structures including trees, graphs, and hash tables. Prerequisite: COMP_SCI 111-0.,WCAS,200,2,"Alice Johnson|Bob Williams"
+COMP_SCI,212-0,Programming Languages,Study of programming language paradigms and design principles.,WCAS,200,2,"Carol Brown"
+STAT,210-0,Introduction to Statistics,Basic statistical concepts including probability, distributions, and hypothesis testing.,WCAS,200,2,"David Jones|Emma Davis"
+STAT,303-1,Statistical Methods I,First course in a three-quarter sequence covering regression, ANOVA, and experimental design.,WCAS,300,2,"Frank Miller|Grace Wilson"
+STAT,303-2,Statistical Methods II,Second course in statistical methods sequence. Advanced regression and multivariate techniques.,WCAS,300,2,"Frank Miller|Grace Wilson"
+STAT,303-3,Statistical Methods III,Final course in statistical methods. Time series, non-parametric methods, and advanced topics.,WCAS,300,2,"Frank Miller|Grace Wilson"
+MATH,220-0,Single-Variable Calculus,Introduction to differential and integral calculus of functions of one variable.,WCAS,200,2,"Henry Moore"
+MATH,224-0,Multivariable Calculus,Calculus of functions of several variables including partial derivatives and multiple integrals.,WCAS,200,2,"Henry Moore"
+ECON,201-0,Introduction to Economics,Principles of microeconomics and macroeconomics. Supply, demand, and market structures.,WCAS,200,3,"Jane Doe"
+PSYCH,110-0,Introduction to Psychology,Survey of major areas of psychology including cognition, development, and social psychology.,WCAS,100,3,"Alice Johnson"
+HISTORY,200-0,Introduction to Historical Methods,Introduction to historical research methods and historiography.,WCAS,200,4,"Bob Williams"
+PHIL,150-0,Introduction to Philosophy,Survey of major philosophical questions and thinkers from ancient to modern times.,WCAS,100,5,"Carol Brown"
+POLI_SCI,240-0,Introduction to Political Theory,Examination of major political theories and their application to contemporary issues.,WCAS,200,3,"David Jones"
+
+

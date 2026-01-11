@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends
 from ..schemas.chat import ChatRequest
 from ..services.openai_service import get_chat_response
+from ..services.llm.tools_impl import recommend_courses
 from ..auth.dependencies import get_current_user
 from ..models.db_models import UserProfileDB
 from datetime import datetime
@@ -28,5 +29,35 @@ def chat(
         locked_classes=request.locked_classes or current_user.locked_classes,
     )
     print("Received request:", chat_request)
-    response = get_chat_response(chat_request)
-    return {"response": response}
+    
+    # Try to use recommend_courses for course-related queries
+    # This will return structured data if it's a course recommendation
+    message_lower = request.message.lower()
+    course_keywords = ["course", "class", "recommend", "find", "take", "enroll", "schedule", "elective", "requirement"]
+    
+    if any(keyword in message_lower for keyword in course_keywords):
+        try:
+            result = recommend_courses(request.message)
+            if isinstance(result, dict) and "structured_data" in result:
+                return {
+                    "response": result.get("content", ""),
+                    "structuredData": result.get("structured_data")
+                }
+            # Fallback to string response
+            return {"response": result if isinstance(result, str) else result.get("content", "")}
+        except Exception as e:
+            print(f"Error in recommend_courses: {e}")
+            import traceback
+            traceback.print_exc()
+            # Fallback to regular chat
+            pass
+    
+    # Default to regular chat response
+    try:
+        response = get_chat_response(chat_request)
+        return {"response": response}
+    except Exception as e:
+        print(f"Error in get_chat_response: {e}")
+        import traceback
+        traceback.print_exc()
+        return {"response": "Sorry, something went wrong. Please try again."}

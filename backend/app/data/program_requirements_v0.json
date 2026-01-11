@@ -1,0 +1,61 @@
+[
+  {
+    "program": {
+      "program_slug": "data-science-bs",
+      "display_name": "Data Science (BS)"
+    },
+    "logic": {
+      "type": "OR",
+      "children": [
+        {
+          "type": "AND",
+          "children": [
+            {"type": "COURSE", "course_id": "STAT 303-1"},
+            {"type": "COURSE", "course_id": "STAT 303-2"},
+            {"type": "COURSE", "course_id": "STAT 303-3"}
+          ]
+        },
+        {
+          "type": "AND",
+          "children": [
+            {"type": "COURSE", "course_id": "STAT 301-1"},
+            {"type": "COURSE", "course_id": "STAT 301-2"},
+            {"type": "COURSE", "course_id": "STAT 301-3"}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "program": {
+      "program_slug": "computer-science-bs",
+      "display_name": "Computer Science (BS)"
+    },
+    "logic": {
+      "type": "AND",
+      "children": [
+        {"type": "COURSE", "course_id": "COMP_SCI 111-0"},
+        {"type": "COURSE", "course_id": "COMP_SCI 211-0"},
+        {"type": "COURSE", "course_id": "COMP_SCI 212-0"},
+        {"type": "COURSE", "course_id": "COMP_SCI 214-0"}
+      ]
+    }
+  },
+  {
+    "program": {
+      "program_slug": "statistics-bs",
+      "display_name": "Statistics (BS)"
+    },
+    "logic": {
+      "type": "AND",
+      "children": [
+        {"type": "COURSE", "course_id": "STAT 210-0"},
+        {"type": "COURSE", "course_id": "STAT 303-1"},
+        {"type": "COURSE", "course_id": "STAT 303-2"},
+        {"type": "COURSE", "course_id": "STAT 303-3"}
+      ]
+    }
+  }
+]
+
+

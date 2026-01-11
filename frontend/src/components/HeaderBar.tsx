@@ -21,10 +21,13 @@ const HeaderBar = () => {
 
   return (
     <div className="flex items-center justify-between bg-[#1f0724] border-b border-gray-500 px-4 py-2">
-      <div className="flex items-center space-x-3">
+      <Link 
+        to="/" 
+        className="flex items-center space-x-3 hover:opacity-80 transition-opacity cursor-pointer"
+      >
         <img src={icon} alt="Logo" className="w-22" />
         <h1 className="align-middle text-white text-3xl">Catlog</h1>
-      </div>
+      </Link>
       <div className="flex items-center space-x-4">
         {user && (
           <span className="text-white text-sm">{user.name || user.email}</span>
